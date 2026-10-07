@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  :::writing{variant="document" id="58321" title="style.css — Big Lanches"}
+
+/* =========================
+   RESET E CONFIGURAÇÕES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: linear-gradient(135deg, #ff4500, #ff6a00);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container h2 {
+    color: #ff4500;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.btn {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   EFEITO DO CONTEÚDO
+========================= */
+
+.container {
+    animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 28px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 60px 20px;
+    }
+
+    .container h2 {
+        font-size: 28px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+Para usar esse arquivo, salve o código como style.css e troque o <style>...</style> do seu HTML por:
+
+<link rel="stylesheet" href="style.css">
+Isso já deixa sua página com gradiente no cabeçalho, sombras, animações, botão moderno e adaptação para celular.
+
+
+Você disse:
+
+crie um site propaganda de uma lanchonete chamada big lanches, index html
+
+O ChatGPT disse:
+Claro! Aqui está um index.html completo para uma página de propaganda da Big Lanches, com visual moderno, cardápio, destaque para promoção, botão de pedido e rodapé.
+
+:::writing{variant="document" id="74163" title="index.html — Big Lanches"}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Big Lanches - Hambúrgueres artesanais, lanches deliciosos e muito sabor. Faça seu pedido!">
+
+    <title>Big Lanches | Sabor que conquista!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="logo">
+            🍔 <span>Big Lanches</span>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#promocao">Promoção</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-text">
+
+                <span class="destaque">
+                    🔥 O sabor que você estava esperando!
+                </span>
+
+                <h1>
+                    Seu lanche favorito
+                    <strong>está aqui!</strong>
+                </h1>
+
+                <p>
+                    Hambúrgueres suculentos, ingredientes frescos
+                    e aquele sabor especial que só a Big Lanches tem.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#cardapio" class="btn btn-primary">
+                        🍔 Ver Cardápio
+                    </a>
+
+                    <a href="#promocao" class="btn btn-secondary">
+                        🔥 Ver Promoção
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="burger">
+                    🍔
+                </div>
+
+                <span class="price">
+                    A partir de<br>
+                    <strong>R$ 19,90</strong>
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFÍCIOS -->
+        <section class="beneficios">
+
+            <div class="beneficio">
+                <span>🥩</span>
+                <h3>Ingredientes frescos</h3>
+                <p>Qualidade em cada mordida.</p>
+            </div>
+
+            <div class="beneficio">
+                <span>🍔</span>
+                <h3>Lanches caprichados</h3>
+                <p>Preparados na hora para você.</p>
+            </div>
+
+            <div class="beneficio">
+                <span>🚀</span>
+                <h3>Entrega rápida</h3>
+                <p>Seu pedido quentinho até você.</p>
+            </div>
+
+        </section>
+
+
+        <!-- CARDÁPIO -->
+        <section id="cardapio" class="cardapio">
+
+            <div class="section-title">
+                <span>🍔 NOSSO CARDÁPIO</span>
+
+                <h2>
+                    Escolha o seu
+                    <strong>favorito!</strong>
+                </h2>
+
+                <p>
+                    Confira alguns dos nossos lanches mais pedidos.
+                </p>
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <div class="card-image">
+                        🍔
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Big Clássico</h3>
+
+                        <p>
+                            Pão, hambúrguer artesanal, queijo,
+                            alface, tomate e molho especial.
+                        </p>
+
+                        <div class="card-footer">
+                            <strong>R$ 19,90</strong>
+
+                            <a href="#contato">
+                                Pedir
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-image">
+                        🍔
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Big Bacon</h3>
+
+                        <p>
+                            Hambúrguer artesanal, queijo cheddar,
+                            bacon crocante e molho especial.
+                        </p>
+
+                        <div class="card-footer">
+                            <strong>R$ 24,90</strong>
+
+                            <a href="#contato">
+                                Pedir
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-image">
+                        🍟
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Combo Big</h3>
+
+                        <p>
+                            Hambúrguer Big, batata frita
+                            crocante e refrigerante gelado.
+                        </p>
+
+                        <div class="card-footer">
+                            <strong>R$ 29,90</strong>
+
+                            <a href="#contato">
+                                Pedir
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMOÇÃO -->
+        <section id="promocao" class="promocao">
+
+            <div class="promocao-content">
+
+                <span>🔥 PROMOÇÃO ESPECIAL</span>
+
+                <h2>
+                    Combo Big
+                    <strong>por apenas R$ 29,90!</strong>
+                </h2>
+
+                <p>
+                    Hambúrguer + batata frita + refrigerante.
+                    Aproveite enquanto durar a promoção!
+                </p>
+
+                <a href="#contato" class="btn btn-primary">
+                    Quero essa promoção!
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section id="contato" class="contato">
+
+            <div class="section-title">
+
+                <span>📞 FAÇA SEU PEDIDO</span>
+
+                <h2>
+                    Está esperando
+                    <strong>o quê?</strong>
+                </h2>
+
+                <p>
+                    Chame a Big Lanches e peça seu lanche favorito!
+                </p>
+
+            </div>
+
+
+            <div class="contato-buttons">
+
+                <a href="#" class="btn btn-whatsapp">
+                    📱 Pedir pelo WhatsApp
+                </a>
+
+                <a href="tel:+5500000000000" class="btn btn-secondary">
+                    ☎️ Ligar agora
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer id="footer">
+
+        <div class="footer-logo">
+            🍔 Big Lanches
+        </div>
+
+        <p>
+            Sabor irresistível em cada mordida!
+        </p>
+
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Big Lanches. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+Estrutura recomendada
+big-lanches/
+│
+├── index.html
+└── style.css
+O index.html acima já está preparado para trabalhar junto com o style.css que criamos. Basta substituir os preços, telefone e links do WhatsApp/Instagram pelos dados reais da lanchonete.
+
+
+
+
+Desktop Commander, SIA
+Use your computer from chat
+Read your files, run the commands, see the results - all from one chat.
+Anúncio
+
+Você disse:
+
+crie apenas o index html desse site
+
+O ChatGPT disse:
+Claro — abaixo está apenas o index.html, com o CSS incluído no próprio arquivo para funcionar sozinho, sem precisar de style.css.
+
+:::writing{variant="document" id="42618" title="index.html — Big Lanches"}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Big Lanches - Hambúrgueres artesanais, lanches deliciosos e muito sabor.">
+    <title>Big Lanches | Sabor que conquista!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff8f0;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: #ff4500;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffe0c2;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 600px;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: linear-gradient(135deg, #fff3e0, #ffd1a3);
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-content span {
+            color: #ff4500;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin: 20px 0;
+            color: #222;
+        }
+
+        .hero h1 strong {
+            color: #ff4500;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #218838;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background: #ff4500;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: #d93800;
+            transform: translateY(-3px);
+        }
+
+        .burger {
+            font-size: 220px;
+            filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.2));
+        }
+
+        /* BENEFÍCIOS */
+        .beneficios {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 60px 8%;
+            background: white;
+            text-align: center;
+        }
+
+        .beneficio {
+            padding: 25px;
+        }
+
+        .beneficio span {
+            font-size: 45px;
+        }
+
+        .beneficio h3 {
+            margin: 15px 0 8px;
+            color: #ff4500;
+        }
+
+        .beneficio p {
+            color: #777;
+        }
+
+        /* CARDÁPIO */
+        .cardapio {
+            padding: 80px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .titulo span {
+            color: #ff4500;
+            font-weight: bold;
+        }
+
+        .titulo h2 {
+            font-size: 40px;
+            margin: 10px 0;
+        }
+
+        .titulo h2 strong {
+            color: #ff4500;
+        }
+
+        .titulo p {
+            color: #777;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            height: 200px;
+            background: #ffe0c2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-footer strong {
+            color: #ff4500;
+            font-size: 22px;
+        }
+
+        .card-footer a {
+            background: #28a745;
+            color: white;
+            padding: 9px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* PROMOÇÃO */
+        .promocao {
+            margin: 30px 8% 80px;
+            padding: 70px 30px;
+            text-align: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #ff4500, #ff7300);
+            color: white;
+        }
+
+        .promocao span {
+            font-weight: bold;
+        }
+
+        .promocao h2 {
+            font-size: 42px;
+            margin: 15px 0;
+        }
+
+        .promocao p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .promocao .btn {
+            background: white;
+            color: #ff4500;
+        }
+
+        /* CONTATO */
+        .contato {
+            background: white;
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .contato-buttons {
+            margin-top: 30px;
+        }
+
+        .whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .whatsapp:hover {
+            background: #1ebe5d;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer h2 {
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #bbb;
+            margin: 8px 0;
+        }
+
+        .social {
+            margin: 20px 0;
+        }
+
+        .social a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social a:hover {
+            color: #ff4500;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .burger {
+                font-size: 140px;
+            }
+
+            .beneficios,
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .promocao h2 {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .btn {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .btn-secondary {
+                margin-left: 0;
+            }
+
+            .titulo h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🍔 Big Lanches</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#promocao">Promoção</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+                <span>🔥 O sabor que você estava esperando!</span>
+
+                <h1>
+                    Seu lanche favorito
+                    <strong>está aqui!</strong>
+                </h1>
+
+                <p>
+                    Hambúrgueres suculentos, ingredientes frescos
+                    e aquele sabor especial que só a Big Lanches tem.
+                </p>
+
+                <a href="#cardapio" class="btn btn-primary">
+                    🍔 Ver Cardápio
+                </a>
+
+                <a href="#promocao" class="btn btn-secondary">
+                    🔥 Promoção
+                </a>
+            </div>
+
+            <div class="burger">
+                🍔
+            </div>
+
+        </section>
+
+
+        <section class="beneficios">
+
+            <div class="beneficio">
+                <span>🥩</span>
+                <h3>Ingredientes frescos</h3>
+                <p>Qualidade em cada mordida.</p>
+            </div>
+
+            <div class="beneficio">
+                <span>🍔</span>
+                <h3>Lanches caprichados</h3>
+                <p>Preparados na hora para você.</p>
+            </div>
+
+            <div class="beneficio">
+                <span>🚀</span>
+                <h3>Entrega rápida</h3>
+                <p>Seu pedido quentinho até você.</p>
+            </div>
+
+        </section>
+
+
+        <section class="cardapio" id="cardapio">
+
+            <div class="titulo">
+                <span>🍔 NOSSO CARDÁPIO</span>
+
+                <h2>
+                    Escolha o seu
+                    <strong>favorito!</strong>
+                </h2>
+
+                <p>Confira alguns dos nossos lanches mais pedidos.</p>
+            </div>
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card-image">🍔</div>
+
+                    <div class="card-content">
+                        <h3>Big Clássico</h3>
+
+                        <p>
+                            Pão, hambúrguer artesanal, queijo,
+                            alface, tomate e molho especial.
+                        </p>
+
+                        <div class="card-footer">
+                            <strong>R$ 19,90</strong>
+                            <a href="#contato">Pedir</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-image">🥓</div>
+
+                    <div class="card-content">
+                        <h3>Big Bacon</h3>
+
+                        <p>
+                            Hambúrguer artesanal, queijo cheddar,
+                            bacon crocante e molho especial.
+                        </p>
+
+                        <div class="card-footer">
+                            <strong>R$ 24,90</strong>
+                            <a href="#contato">Pedir</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-image">🍟</div>
+
+                    <div class="card-content">
+                        <h3>Combo Big</h3>
+
+                        <p>
+                            Hambúrguer Big, batata frita
+                            crocante e refrigerante gelado.
+                        </p>
+
+                        <div class="card-footer">
+                            <strong>R$ 29,90</strong>
+                            <a href="#contato">Pedir</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="promocao" id="promocao">
+
+            <span>🔥 PROMOÇÃO ESPECIAL</span>
+
+            <h2>
+                Combo Big por apenas
+                <strong>R$ 29,90!</strong>
+            </h2>
+
+            <p>
+                Hambúrguer + batata frita + refrigerante.
+                Aproveite enquanto durar a promoção!
+            </p>
+
+            <a href="#contato" class="btn">
+                Quero essa promoção!
+            </a>
+
+        </section>
+
+
+        <section class="contato" id="contato">
+
+            <div class="titulo">
+
+                <span>📞 FAÇA SEU PEDIDO</span>
+
+                <h2>
+                    Está esperando
+                    <strong>o quê?</strong>
+                </h2>
+
+                <p>
+                    Chame a Big Lanches e peça seu lanche favorito!
+                </p>
+
+            </div>
+
+            <div class="contato-buttons">
+
+                <a href="https://wa.me/5500000000000"
+                    class="btn whatsapp">
+                    📱 Pedir pelo WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h2>🍔 Big Lanches</h2>
+
+        <p>Sabor irresistível em cada mordida!</p>
+
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <p>
+            © 2026 Big Lanches. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>  
+</body>
+</html>
